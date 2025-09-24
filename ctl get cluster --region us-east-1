@@ -1,0 +1,106 @@
+{
+    "StackEvents": [
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "ManagedNodeGroup-CREATE_IN_PROGRESS-2025-09-10T13:06:38.797Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "ManagedNodeGroup",
+            "PhysicalResourceId": "basic-cluster-v1/ng-1",
+            "ResourceType": "AWS::EKS::Nodegroup",
+            "Timestamp": "2025-09-10T13:06:38.797000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "Resource creation Initiated",
+            "ResourceProperties": "{\"NodeRole\":\"arn:aws:iam::953790153853:role/eksctl-basic-cluster-v1-nodegroup--NodeInstanceRole-OJmiiPjCgHdw\",\"NodegroupName\":\"ng-1\",\"Subnets\":[\"subnet-02374e36b1351daea\",\"subnet-0fbfb054bb24525a5\"],\"AmiType\":\"AL2023_x86_64_STANDARD\",\"ScalingConfig\":{\"DesiredSize\":\"2\",\"MinSize\":\"1\",\"MaxSize\":\"3\"},\"LaunchTemplate\":{\"Id\":\"lt-0e2e2cb6bd6d71996\"},\"ClusterName\":\"basic-cluster-v1\",\"Labels\":{\"alpha.eksctl.io/cluster-name\":\"basic-cluster-v1\",\"alpha.eksctl.io/nodegroup-name\":\"ng-1\"},\"InstanceTypes\":[\"t3.medium\"],\"Tags\":{\"alpha.eksctl.io/nodegroup-name\":\"ng-1\",\"alpha.eksctl.io/nodegroup-type\":\"managed\"}}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "ManagedNodeGroup-CREATE_IN_PROGRESS-2025-09-10T13:06:35.361Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "ManagedNodeGroup",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::EKS::Nodegroup",
+            "Timestamp": "2025-09-10T13:06:35.361000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"NodeRole\":\"arn:aws:iam::953790153853:role/eksctl-basic-cluster-v1-nodegroup--NodeInstanceRole-OJmiiPjCgHdw\",\"NodegroupName\":\"ng-1\",\"Subnets\":[\"subnet-02374e36b1351daea\",\"subnet-0fbfb054bb24525a5\"],\"AmiType\":\"AL2023_x86_64_STANDARD\",\"ScalingConfig\":{\"DesiredSize\":\"2\",\"MinSize\":\"1\",\"MaxSize\":\"3\"},\"LaunchTemplate\":{\"Id\":\"lt-0e2e2cb6bd6d71996\"},\"ClusterName\":\"basic-cluster-v1\",\"Labels\":{\"alpha.eksctl.io/cluster-name\":\"basic-cluster-v1\",\"alpha.eksctl.io/nodegroup-name\":\"ng-1\"},\"InstanceTypes\":[\"t3.medium\"],\"Tags\":{\"alpha.eksctl.io/nodegroup-name\":\"ng-1\",\"alpha.eksctl.io/nodegroup-type\":\"managed\"}}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "NodeInstanceRole-CREATE_COMPLETE-2025-09-10T13:06:34.664Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "NodeInstanceRole",
+            "PhysicalResourceId": "eksctl-basic-cluster-v1-nodegroup--NodeInstanceRole-OJmiiPjCgHdw",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2025-09-10T13:06:34.664000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "ResourceProperties": "{\"Path\":\"/\",\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly\",\"arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy\",\"arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy\",\"arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":[\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}]},\"Tags\":[{\"Value\":\"eksctl-basic-cluster-v1-nodegroup-ng-1/NodeInstanceRole\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "LaunchTemplate-CREATE_COMPLETE-2025-09-10T13:06:19.387Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "LaunchTemplate",
+            "PhysicalResourceId": "lt-0e2e2cb6bd6d71996",
+            "ResourceType": "AWS::EC2::LaunchTemplate",
+            "Timestamp": "2025-09-10T13:06:19.387000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "ResourceProperties": "{\"LaunchTemplateData\":{\"MetadataOptions\":{\"HttpPutResponseHopLimit\":\"2\",\"HttpTokens\":\"required\"},\"TagSpecifications\":[{\"ResourceType\":\"instance\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"volume\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"network-interface\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]}],\"BlockDeviceMappings\":[{\"Ebs\":{\"VolumeType\":\"gp3\",\"Throughput\":\"125\",\"Iops\":\"3000\",\"VolumeSize\":\"80\"},\"DeviceName\":\"/dev/xvda\"}],\"SecurityGroupIds\":[\"sg-0f47383f73c0af496\"]},\"LaunchTemplateName\":\"eksctl-basic-cluster-v1-nodegroup-ng-1\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "LaunchTemplate-CREATE_IN_PROGRESS-2025-09-10T13:06:18.282Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "LaunchTemplate",
+            "PhysicalResourceId": "lt-0e2e2cb6bd6d71996",
+            "ResourceType": "AWS::EC2::LaunchTemplate",
+            "Timestamp": "2025-09-10T13:06:18.282000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "Resource creation Initiated",
+            "ResourceProperties": "{\"LaunchTemplateData\":{\"MetadataOptions\":{\"HttpPutResponseHopLimit\":\"2\",\"HttpTokens\":\"required\"},\"TagSpecifications\":[{\"ResourceType\":\"instance\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"volume\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"network-interface\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]}],\"BlockDeviceMappings\":[{\"Ebs\":{\"VolumeType\":\"gp3\",\"Throughput\":\"125\",\"Iops\":\"3000\",\"VolumeSize\":\"80\"},\"DeviceName\":\"/dev/xvda\"}],\"SecurityGroupIds\":[\"sg-0f47383f73c0af496\"]},\"LaunchTemplateName\":\"eksctl-basic-cluster-v1-nodegroup-ng-1\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "NodeInstanceRole-CREATE_IN_PROGRESS-2025-09-10T13:06:18.150Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "NodeInstanceRole",
+            "PhysicalResourceId": "eksctl-basic-cluster-v1-nodegroup--NodeInstanceRole-OJmiiPjCgHdw",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2025-09-10T13:06:18.150000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "Resource creation Initiated",
+            "ResourceProperties": "{\"Path\":\"/\",\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly\",\"arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy\",\"arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy\",\"arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":[\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}]},\"Tags\":[{\"Value\":\"eksctl-basic-cluster-v1-nodegroup-ng-1/NodeInstanceRole\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "LaunchTemplate-CREATE_IN_PROGRESS-2025-09-10T13:06:16.853Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "LaunchTemplate",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::EC2::LaunchTemplate",
+            "Timestamp": "2025-09-10T13:06:16.853000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"LaunchTemplateData\":{\"MetadataOptions\":{\"HttpPutResponseHopLimit\":\"2\",\"HttpTokens\":\"required\"},\"TagSpecifications\":[{\"ResourceType\":\"instance\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"volume\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]},{\"ResourceType\":\"network-interface\",\"Tags\":[{\"Value\":\"basic-cluster-v1-ng-1-Node\",\"Key\":\"Name\"},{\"Value\":\"ng-1\",\"Key\":\"alpha.eksctl.io/nodegroup-name\"},{\"Value\":\"managed\",\"Key\":\"alpha.eksctl.io/nodegroup-type\"}]}],\"BlockDeviceMappings\":[{\"Ebs\":{\"VolumeType\":\"gp3\",\"Throughput\":\"125\",\"Iops\":\"3000\",\"VolumeSize\":\"80\"},\"DeviceName\":\"/dev/xvda\"}],\"SecurityGroupIds\":[\"sg-0f47383f73c0af496\"]},\"LaunchTemplateName\":\"eksctl-basic-cluster-v1-nodegroup-ng-1\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "NodeInstanceRole-CREATE_IN_PROGRESS-2025-09-10T13:06:16.840Z",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "NodeInstanceRole",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2025-09-10T13:06:16.840000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"Path\":\"/\",\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPullOnly\",\"arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy\",\"arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy\",\"arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":[\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}]},\"Tags\":[{\"Value\":\"eksctl-basic-cluster-v1-nodegroup-ng-1/NodeInstanceRole\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "EventId": "ee5777d0-8e46-11f0-ac96-12f4ce68d53d",
+            "StackName": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "LogicalResourceId": "eksctl-basic-cluster-v1-nodegroup-ng-1",
+            "PhysicalResourceId": "arn:aws:cloudformation:us-east-1:953790153853:stack/eksctl-basic-cluster-v1-nodegroup-ng-1/ee53f560-8e46-11f0-ac96-12f4ce68d53d",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2025-09-10T13:06:14.648000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "User Initiated"
+        }
+    ]
+}
